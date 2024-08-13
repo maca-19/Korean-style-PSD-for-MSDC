@@ -1,0 +1,41 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.color_plus": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "execute": "(1.0)"
+                        }
+                    ]
+                },
+                "execute": {
+                    "on_entry": [
+                        "/function msdc0001_color_plus",
+                        "/kill @s"
+                    ]
+                }
+            }
+        },
+        "controller.animation.color_minus": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "execute": "(1.0)"
+                        }
+                    ]
+                },
+                "execute": {
+                    "on_entry": [
+                        "/function msdc0001_color_minus",
+                        "/kill @s"
+                    ]
+                }
+            }
+        }
+    }
+}

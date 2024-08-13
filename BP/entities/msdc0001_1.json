@@ -1,0 +1,624 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "msdc:msdc0001_1",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false,
+            "animations": {
+                "setting": "controller.animation.setting"
+            },
+            "scripts": {
+                "animate": [
+                    "setting"
+                ]
+            }
+        },
+        "components": {
+            "minecraft:physics": {
+                "has_collision": false,
+                "has_gravity": false
+            },
+            "minecraft:knockback_resistance": {
+                "value": 10
+            },
+            "minecraft:fire_immune": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:collision_box": {
+                "width": 0,
+                "height": 0
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "msdc_psd"
+                ]
+            },
+            "minecraft:skin_id": {
+                "value": 15
+            },
+            "minecraft:entity_sensor": {
+                "sensor_range": 10,
+                "relative_range": false,
+                "require_all": false,
+                "minimum_count": 1,
+                "event_filters": {
+                    "any_of": [
+                        {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "player"
+                        },
+                        {
+                            "test": "has_tag",
+                            "subject": "other",
+                            "value": "in_msdc_setting_mode"
+                        }
+                    ]
+                },
+                "event": "msdc:inSettingMode"
+            }
+        },
+        "component_groups": {
+            "msdc:A1": {
+                "minecraft:variant": {
+                    "value": 1
+                }
+            },
+            "msdc:A2": {
+                "minecraft:variant": {
+                    "value": 2
+                }
+            },
+            "msdc:A3": {
+                "minecraft:variant": {
+                    "value": 3
+                }
+            },
+            "msdc:A4": {
+                "minecraft:variant": {
+                    "value": 4
+                }
+            },
+            "msdc:A5": {
+                "minecraft:variant": {
+                    "value": 5
+                }
+            },
+            "msdc:A6": {
+                "minecraft:variant": {
+                    "value": 6
+                }
+            },
+            "msdc:A7": {
+                "minecraft:variant": {
+                    "value": 7
+                }
+            },
+            "msdc:A8": {
+                "minecraft:variant": {
+                    "value": 8
+                }
+            },
+            "msdc:A9": {
+                "minecraft:variant": {
+                    "value": 9
+                }
+            },
+            "msdc:A10": {
+                "minecraft:variant": {
+                    "value": 10
+                }
+            },
+            "msdc:B1": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "msdc:B2": {
+                "minecraft:mark_variant": {
+                    "value": 2
+                }
+            },
+            "msdc:B3": {
+                "minecraft:mark_variant": {
+                    "value": 3
+                }
+            },
+            "msdc:B4": {
+                "minecraft:mark_variant": {
+                    "value": 4
+                }
+            },
+            "msdc:lcd_on_status": {
+                "minecraft:is_tamed": {}
+            },
+            "msdc:opened": {
+                "minecraft:is_ignited": {}
+            },
+            "msdc:color1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "msdc:color2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                }
+            },
+            "msdc:color3": {
+                "minecraft:skin_id": {
+                    "value": 3
+                }
+            },
+            "msdc:color4": {
+                "minecraft:skin_id": {
+                    "value": 4
+                }
+            },
+            "msdc:color5": {
+                "minecraft:skin_id": {
+                    "value": 5
+                }
+            },
+            "msdc:color6": {
+                "minecraft:skin_id": {
+                    "value": 6
+                }
+            },
+            "msdc:color7": {
+                "minecraft:skin_id": {
+                    "value": 7
+                }
+            },
+            "msdc:color8": {
+                "minecraft:skin_id": {
+                    "value": 8
+                }
+            },
+            "msdc:color9": {
+                "minecraft:skin_id": {
+                    "value": 9
+                }
+            },
+            "msdc:color10": {
+                "minecraft:skin_id": {
+                    "value": 10
+                }
+            },
+            "msdc:color11": {
+                "minecraft:skin_id": {
+                    "value": 11
+                }
+            },
+            "msdc:color12": {
+                "minecraft:skin_id": {
+                    "value": 12
+                }
+            },
+            "msdc:color13": {
+                "minecraft:skin_id": {
+                    "value": 13
+                }
+            },
+            "msdc:color14": {
+                "minecraft:skin_id": {
+                    "value": 14
+                }
+            },
+            "msdc:color15": {
+                "minecraft:skin_id": {
+                    "value": 15
+                }
+            },
+            "msdc:inSettingMode": {
+                "minecraft:collision_box": {
+                    "height": 1,
+                    "width": 1
+                },
+                "minecraft:physics": {
+                    "has_collision": true,
+                    "has_gravity": false
+                },
+                "minecraft:interact": {
+                    "interactions": {
+                        "on_interact": {
+                            "event": "msdc:startSetting"
+                        },
+                        "interact_text": "setting",
+                        "cooldown": 3
+                    }
+                },
+                "minecraft:entity_sensor": {
+                    "sensor_range": 10,
+                    "relative_range": false,
+                    "require_all": false,
+                    "minimum_count": 1,
+                    "event_filters": {
+                        "all_of": [
+                            {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "player"
+                            },
+                            {
+                                "test": "has_tag",
+                                "subject": "other",
+                                "operator": "!=",
+                                "value": "in_msdc_setting_mode"
+                            }
+                        ]
+                    },
+                    "event": "msdc:notInSettingMode"
+                }
+            },
+            "msdc:notInSettingMode": {
+                "minecraft:collision_box": {
+                    "height": 0,
+                    "width": 0
+                },
+                "minecraft:physics": {
+                    "has_collision": false,
+                    "has_gravity": false
+                },
+                "minecraft:is_tamed": {},
+                "minecraft:entity_sensor": {
+                    "sensor_range": 10,
+                    "relative_range": false,
+                    "require_all": false,
+                    "minimum_count": 1,
+                    "event_filters": {
+                        "all_of": [
+                            {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "player"
+                            },
+                            {
+                                "test": "has_tag",
+                                "subject": "other",
+                                "value": "in_msdc_setting_mode"
+                            }
+                        ]
+                    },
+                    "event": "msdc:inSettingMode"
+                }
+            },
+            "msdc:setting": {
+                "minecraft:is_saddled": {}
+            },
+            "msdc:custom1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "msdc:custom2": {
+                "minecraft:skin_id": {
+                    "value": 2
+                }
+            },
+            "msdc:custom3": {
+                "minecraft:skin_id": {
+                    "value": 3
+                }
+            },
+            "msdc:custom4": {
+                "minecraft:skin_id": {
+                    "value": 4
+                }
+            }
+        },
+        "events": {
+            "msdc:A1": {
+                "add": {
+                    "component_groups": [
+                        "msdc:A1"
+                    ]
+                }
+            },
+            "msdc:A2": {
+                "add": {
+                    "component_groups": [
+                        "msdc:A2"
+                    ]
+                }
+            },
+            "msdc:A3": {
+                "add": {
+                    "component_groups": [
+                        "msdc:A3"
+                    ]
+                }
+            },
+            "msdc:A4": {
+                "add": {
+                    "component_groups": [
+                        "msdc:A4"
+                    ]
+                }
+            },
+            "msdc:A5": {
+                "add": {
+                    "component_groups": [
+                        "msdc:A5"
+                    ]
+                }
+            },
+            "msdc:A6": {
+                "add": {
+                    "component_groups": [
+                        "msdc:A6"
+                    ]
+                }
+            },
+            "msdc:A7": {
+                "add": {
+                    "component_groups": [
+                        "msdc:A7"
+                    ]
+                }
+            },
+            "msdc:A8": {
+                "add": {
+                    "component_groups": [
+                        "msdc:A8"
+                    ]
+                }
+            },
+            "msdc:A9": {
+                "add": {
+                    "component_groups": [
+                        "msdc:A9"
+                    ]
+                }
+            },
+            "msdc:A10": {
+                "add": {
+                    "component_groups": [
+                        "msdc:A10"
+                    ]
+                }
+            },
+            "msdc:B1": {
+                "add": {
+                    "component_groups": [
+                        "msdc:B1"
+                    ]
+                }
+            },
+            "msdc:B2": {
+                "add": {
+                    "component_groups": [
+                        "msdc:B2"
+                    ]
+                }
+            },
+            "msdc:B3": {
+                "add": {
+                    "component_groups": [
+                        "msdc:B3"
+                    ]
+                }
+            },
+            "msdc:B4": {
+                "add": {
+                    "component_groups": [
+                        "msdc:B4"
+                    ]
+                }
+            },
+            "msdc:open": {
+                "add": {
+                    "component_groups": [
+                        "msdc:opened"
+                    ]
+                }
+            },
+            "msdc:close": {
+                "remove": {
+                    "component_groups": [
+                        "msdc:opened"
+                    ]
+                }
+            },
+            "msdc:lcd_on": {
+                "add": {
+                    "component_groups": [
+                        "msdc:lcd_on_status"
+                    ]
+                }
+            },
+            "msdc:lcd_off": {
+                "remove": {
+                    "component_groups": [
+                        "msdc:lcd_on_status"
+                    ]
+                }
+            },
+            "msdc:inSettingMode": {
+                "add": {
+                    "component_groups": [
+                        "msdc:inSettingMode"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "msdc:notInSettingMode"
+                    ]
+                }
+            },
+            "msdc:notInSettingMode": {
+                "add": {
+                    "component_groups": [
+                        "msdc:notInSettingMode"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "msdc:inSettingMode"
+                    ]
+                }
+            },
+            "msdc:startSetting": {
+                "add": {
+                    "component_groups": [
+                        "msdc:setting"
+                    ]
+                }
+            },
+            "msdc:endSetting": {
+                "remove": {
+                    "component_groups": [
+                        "msdc:setting"
+                    ]
+                }
+            },
+            "msdc:color1": {
+                "add": {
+                    "component_groups": [
+                        "msdc:color1"
+                    ]
+                }
+            },
+            "msdc:color2": {
+                "add": {
+                    "component_groups": [
+                        "msdc:color2"
+                    ]
+                }
+            },
+            "msdc:color3": {
+                "add": {
+                    "component_groups": [
+                        "msdc:color3"
+                    ]
+                }
+            },
+            "msdc:color4": {
+                "add": {
+                    "component_groups": [
+                        "msdc:color4"
+                    ]
+                }
+            },
+            "msdc:color5": {
+                "add": {
+                    "component_groups": [
+                        "msdc:color5"
+                    ]
+                }
+            },
+            "msdc:color6": {
+                "add": {
+                    "component_groups": [
+                        "msdc:color6"
+                    ]
+                }
+            },
+            "msdc:color7": {
+                "add": {
+                    "component_groups": [
+                        "msdc:color7"
+                    ]
+                }
+            },
+            "msdc:color8": {
+                "add": {
+                    "component_groups": [
+                        "msdc:color8"
+                    ]
+                }
+            },
+            "msdc:color9": {
+                "add": {
+                    "component_groups": [
+                        "msdc:color9"
+                    ]
+                }
+            },
+            "msdc:color10": {
+                "add": {
+                    "component_groups": [
+                        "msdc:color10"
+                    ]
+                }
+            },
+            "msdc:color11": {
+                "add": {
+                    "component_groups": [
+                        "msdc:color11"
+                    ]
+                }
+            },
+            "msdc:color12": {
+                "add": {
+                    "component_groups": [
+                        "msdc:color12"
+                    ]
+                }
+            },
+            "msdc:color13": {
+                "add": {
+                    "component_groups": [
+                        "msdc:color13"
+                    ]
+                }
+            },
+            "msdc:color14": {
+                "add": {
+                    "component_groups": [
+                        "msdc:color14"
+                    ]
+                }
+            },
+            "msdc:color15": {
+                "add": {
+                    "component_groups": [
+                        "msdc:color15"
+                    ]
+                }
+            },
+            "msdc:custom1": {
+                "add": {
+                    "component_groups": [
+                        "msdc:custom1"
+                    ]
+                }
+            },
+            "msdc:custom2": {
+                "add": {
+                    "component_groups": [
+                        "msdc:custom2"
+                    ]
+                }
+            },
+            "msdc:custom3": {
+                "add": {
+                    "component_groups": [
+                        "msdc:custom3"
+                    ]
+                }
+            },
+            "msdc:custom4": {
+                "add": {
+                    "component_groups": [
+                        "msdc:custom4"
+                    ]
+                }
+            },
+            "msdc:exitCustomAnimation": {
+                "remove": {
+                    "component_groups": [
+                        "msdc:custom1",
+                        "msdc:custom2",
+                        "msdc:custom3",
+                        "msdc:custom4"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "pack.name",
+        "description": "pack.description",
+        "uuid": "4c891bee-497c-42d5-8882-a65f828da8b4",
+        "version": [
+            1,
+            0,
+            5
+        ],
+        "min_engine_version": [
+            1,
+            20,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "description": "",
+            "uuid": "7017ec2b-d042-489f-acfb-f85786f40b79",
+            "version": [
+                1,
+                0,
+                5
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "d1236ef3-022e-4d0b-b367-77d621aa85d8",
+            "version": [
+                1,
+                0,
+                5
+            ]
+        }
+    ],
+    "metadata": {
+        "authors": [
+            "maca-19"
+        ]
+    }
+}

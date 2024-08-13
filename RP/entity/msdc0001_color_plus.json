@@ -1,0 +1,23 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "msdc:msdc0001_color_plus",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/none"
+            },
+            "geometry": {
+                "default": "geometry.none"
+            },
+            "render_controllers": [
+                "controller.render.none"
+            ],
+            "spawn_egg": {
+                "texture": "msdc0001_color_plus"
+            }
+        }
+    }
+}

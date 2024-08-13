@@ -1,0 +1,15 @@
+{
+	"resource_pack_name": "samplePSDforMSDC",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"msdc0001_color_plus": {
+			"textures": "textures/item/msdc0001_color_plus"
+		},
+		"msdc0001_color_minus": {
+			"textures": "textures/item/msdc0001_color_minus"
+		},
+		"msdc0001_1_spawn": {
+			"textures": "textures/item/pack_icon"
+		}
+	}
+}

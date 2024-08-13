@@ -1,0 +1,28 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.setting": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "execute": "query.is_saddled"
+                        }
+                    ]
+                },
+                "execute": {
+                    "on_entry": [
+                        "/summon msdc:setting ~ ~ ~",
+                        "/event entity @s msdc:endSetting"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

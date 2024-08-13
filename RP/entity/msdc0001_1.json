@@ -1,0 +1,72 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "msdc:msdc0001_1",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/msdc0001_1"
+			},
+			"geometry": {
+				"default": "geometry.msdc0001_1"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"open": "animation.msdc0001.open",
+				"close": "animation.msdc0001.close",
+				"A1": "animation.msdc0001.A1",
+				"A2": "animation.msdc0001.A2",
+				"A3": "animation.msdc0001.A3",
+				"A4": "animation.msdc0001.A4",
+				"A5": "animation.msdc0001.A5",
+				"A6": "animation.msdc0001.A6",
+				"A7": "animation.msdc0001.A7",
+				"A8": "animation.msdc0001.A8",
+				"A9": "animation.msdc0001.A9",
+				"A10": "animation.msdc0001.A10",
+				"B1": "animation.msdc0001.B1",
+				"B2": "animation.msdc0001.B2",
+				"B3": "animation.msdc0001.B3",
+				"B4": "animation.msdc0001.B4",
+				"lcd_on": "animation.msdc0001.lcd_on",
+				"lcd_off": "animation.msdc0001.lcd_off",
+				"color1": "animation.msdc0001.color1",
+				"color2": "animation.msdc0001.color2",
+				"color3": "animation.msdc0001.color3",
+				"color4": "animation.msdc0001.color4",
+				"color5": "animation.msdc0001.color5",
+				"color6": "animation.msdc0001.color6",
+				"color7": "animation.msdc0001.color7",
+				"color8": "animation.msdc0001.color8",
+				"color9": "animation.msdc0001.color9",
+				"color10": "animation.msdc0001.color10",
+				"color11": "animation.msdc0001.color11",
+				"color12": "animation.msdc0001.color12",
+				"color13": "animation.msdc0001.color13",
+				"color14": "animation.msdc0001.color14",
+				"color15": "animation.msdc0001.color15",
+				"door": "controller.animation.door",
+				"numberA": "controller.animation.numberA",
+				"numberB": "controller.animation.numberB",
+				"lcd": "controller.animation.lcd",
+				"color_switch": "controller.animation.color_switch"
+			},
+			"scripts": {
+				"animate": [
+					"door",
+					"numberA",
+					"numberB",
+					"lcd",
+					"color_switch"
+				]
+			},
+			"spawn_egg": {
+				"texture": "msdc0001_1_spawn"
+			}
+		}
+	}
+}

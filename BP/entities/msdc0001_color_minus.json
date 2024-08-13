@@ -1,0 +1,19 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "msdc:msdc0001_color_minus",
+            "is_experimental": false,
+            "is_spawnable": true,
+            "is_summonable": true,
+            "animations": {
+                "color_minus": "controller.animation.color_minus"
+            },
+            "scripts": {
+                "animate": [
+                    "color_minus"
+                ]
+            }
+        }
+    }
+}

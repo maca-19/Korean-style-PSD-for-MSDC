@@ -1,0 +1,6 @@
+pack.name=Korean-style PSD for MSDC
+pack.description=This addon addes Platform Screen Door that you can control with MSDC.  version:1.0.5  made by maca-19(마카)
+
+item.spawn_egg.entity.msdc:msdc0001_1.name=Spawn korean-style PSD
+item.spawn_egg.entity.msdc:msdc0001_color_minus.name=change korean-style PSD §cc§eo§ar§bo§dr§r -> PREVIOUS COLOR
+item.spawn_egg.entity.msdc:msdc0001_color_plus.name=change korean-style PSD §cc§eo§ar§bo§dr§r -> NEXT COLOR

@@ -1,0 +1,6 @@
+pack.name=한국형 스크린도어 for MSDC
+pack.description=MSDC로 조작가능한 스크린도어를 추가 해줍니다.  버전:1.0.5  제작자:마카(maca-19)
+
+item.spawn_egg.entity.msdc:msdc0001_1.name=한국형 스크린도어 스폰
+item.spawn_egg.entity.msdc:msdc0001_color_minus.name=한국형 스크린도어 색 변경 -> 이전 색
+item.spawn_egg.entity.msdc:msdc0001_color_plus.name=한국형 스크린도어 색 변경 -> 다음 색
